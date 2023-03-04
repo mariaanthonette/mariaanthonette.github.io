@@ -14,7 +14,8 @@
 
         body,html {
             height: 100%;
-            line-height: 1.8;
+            line-height: 1.6;
+            background-image: url('bg-grid.svg');
         }
 
         body,h1 {
@@ -28,10 +29,7 @@
             top: 0;
             width: 100%;
             display: inline;
-            justify-content: flex-end;
-            flex-direction: column-reverse;
-            color:white;
-            border: 2px solid black;
+            background-color: white;
         }
 
         ul {
@@ -55,23 +53,51 @@
 
         /*to change tab color when you hover*/
         li a:hover{
-            width:100px;
-            background-color:blue;
+            background-color:lightslategray;
+            color:white;
         }
 
         /*Homepage*/
 
         header{
+            padding-top: 100px;
             background-position: center;
             background-size: cover;
             background-image: url('https://www.pexels.com/photo/gray-concrete-building-exterior-with-geometric-design-3038740/');
-            min-height: 100%;
+            height: 300px;
+            width: 65%;
+            float: left;
+        }
+
+        aside{
+            padding-top: 100px;
+            float:right;
+            width: 35%;
         }
 
         .intro{
             box-sizing: border-box;
-            overflow: auto;
-            outline-off:4px;
+            border: 1px solid lightgray;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .gallery{
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            padding: 20px;
+            margin: 20px;
+            align-items: center;
+        }
+        
+        #gallery{
+            width: 400px;
+            height: 500px;
+            object-fit: contain
+        }
+
+        footer{
+            background-color: dimgrey;
         }
 
     </style>
@@ -88,7 +114,7 @@
             <li><a href=about.html>About</a></li>
             <li><a href=projects.html>Projects</a></li>
             <li><a href=index.html>HOME</a></li>
-            <li id="logo" style="float:left;"><a href=index.html><img src=mariaanthonette-logo.svg alt="mariaanthonette-logo" height="25%"></a></li>
+            <li id="logo" style="float:left;"><button><a href=index.html><img src=mariaanthonette-logo.svg alt="mariaanthonette-logo" height="25%"></a></button></li>
           </ul>
 
     </nav>
@@ -101,26 +127,26 @@
     
 
 <!--Self-introduction/Profile-->
-    <aside class="intro">
-        
-        <p>hey, there!</p>
-        <img src= alt="Profile Photo">
+    <aside class="profile">
+        <section class="intro">
+
+        <b><i>hey, there!</i></b>
         <p>My name's  Maria Anthonette Cañaveral.</p>
         <p>I was raised in a farm house by my paternal grandparents in Albay, Philippines but grew up particularly inclined with computers and the web.</p>
         <p>I'm a mom 24/7 and an accounts receivable by occupation.</p>
         <p>I do crochet and crafting to get by during rough days.</p>
-        <p>By mid of February 2023, I came across an ad about KodeGo's bootcamp on Facebook and had the idea to give my high school love another try - CODING.</p>
+        <p>By mid of February 2023, I came across an ad about KodeGo's bootcamp on Facebook and had the idea to give my high school love another try - <b>CODING</b>.</p>
         <br>
         <p>Come along in my journey to becoming a full-stack web developer.</p>
-        <p>Fight!</p>
-        
-    </aside>
+        <i>Fight!</i>
+    
+        </section>
 
 <!--Photo Gallery-->
     <section class="gallery">
-        <h2>life in snaps</h2>
+        <b><i>life in snaps</i></b>
         <figure>
-            <img src=https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg alt="pic">
+            <img id="gallery" src=mariaanthonette-logo.svg alt="pic" width="375px" height="225px">
             <figcaption>
         </figure>
 
@@ -131,9 +157,11 @@
 
     </section>
 
+    </aside>
 
-
-    
+    <footer>
+        <!--social media link icons-->
+    </footer>
 
 </body>
 
