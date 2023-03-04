@@ -24,8 +24,6 @@
         /*Navigation Bar*/
 
         nav.navigation-bar {
-            position: fixed;
-            top: 0;
             width: 100%;
             max-height: 150px;
             display: inline;
@@ -61,20 +59,9 @@
             color:white;
         }
 
-        /*Homepage*/
-
-        header{
-            padding-top: 100px;
-            background-position: center;
-            background-size: cover;
-            background-image: url('mariablog-header.svg');
-            height: 300px;
-            width: 65%;
-            float: left;
-        }
 
         .profile{
-            padding-top: 100px;
+            padding-top: 25px;
             float:right;
             width: 35%;
         }
@@ -87,11 +74,11 @@
         }
 
         .gallery{
-            box-sizing: border-box;
+            box-sizing: content-box;
             border: 1px solid lightgray;
-            padding: 20px;
+            padding: 0px;
             margin: 20px;
-            align-items: center;
+            align-content: space-around;
         }
         
         #gallery{
@@ -112,6 +99,14 @@
             padding-top: 100px;
             float:left;
             width: 65%;
+        }
+
+        .header{
+            height: 200px;
+            object-fit: contain;
+            float: left;
+            margin: 0px;
+            padding: 0px;
         }
 
         #featured{
@@ -148,14 +143,12 @@
             <li><a href=about.html>About</a></li>
             <li><a href=projects.html>Projects</a></li>
             <li><a href=index.html>HOME</a></li>
-            <li id="logo" style="float:left;"><a href=index.html><img src=mariaanthonette-logo.svg alt="mariaanthonette-logo"></a></li>
+            <li id="logo" style="float:left;"><img src=mariaanthonette-logo.svg alt="mariaanthonette-logo" width="160px" height="80px"></li>
         </ul>
 
     </nav>
-
-    <header>  
-    </header>
     
+    <span><img src=blog-header.svg alt="mariaanthonette-logo" width="65%;"></span>
 
 <!--Self-introduction/Profile-->
     <aside class="profile">
@@ -176,8 +169,8 @@
 <!--Photo Gallery-->
     <section class="gallery">
         
-        <figure>
-            <img id="gallery" src=mariaanthonette-logo.svg alt="pic" width="375px" height="225px">
+        <figure id="gallery">
+            <img src=mariaanthonette-logo.svg alt="pic" width="300px" height="300px">
             <figcaption>
         </figure>
 

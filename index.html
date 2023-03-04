@@ -25,13 +25,15 @@
 
         /*Navigation Bar*/
 
-        .navigation-bar {
-            position: fixed;
-            top: 0;
+        nav.navigation-bar {
             width: 100%;
+            max-height: 150px;
             display: inline;
-            justify-content: flex-end;
-            flex-direction: column-reverse;
+            background-color: white;
+        }
+
+        #logo{
+            height:100px
         }
 
         ul {
@@ -49,8 +51,14 @@
             display: block;
             color:black;
             text-align: center;
-            padding: 20px 20px;
+            padding: 20px 10px;
             text-decoration: none;
+        }
+
+        /*to change tab color when you hover*/
+        li a:hover{
+            background-color:lightslategray;
+            color:white;
         }
 
         /*Homepage*/
@@ -58,7 +66,7 @@
         .home{
             background-position: center;
             background-size: cover;
-            background-image: url("https://github.com/mariaanthonette/mariaanthonette.github.io/blob/main/home-bg.svg");
+            background-image: url("/home-bg.svg");
             min-height: 100%;
         }
 
@@ -76,8 +84,7 @@
             <li><a href=about.html>About</a></li>
             <li><a href=projects.html>Projects</a></li>
             <li><a href=index.html>HOME</a></li>
-            <li style="float:left;"><a href=index.html><img src=mariaanthonette-logo.svg alt="mariaanthonette-logo" height=25%></a></li>
-          </ul>
+            <li id="logo" style="float:left;"><img src=mariaanthonette-logo.svg alt="mariaanthonette-logo" width="160px" height="80px"></li>          </ul>
 
     </div>
 
