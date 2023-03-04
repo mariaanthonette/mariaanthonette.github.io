@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About</title>
+    <title>Contact</title>
     <meta name="author" content="Maria Anthonette Cañaveral">
     <meta name="description" content="Portfolio">
     <meta name="keywords" content="full-stack web developer, branding, traffic">   
@@ -10,8 +10,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href=""><!--fonts Tilt Warp + Space Grotesk-->
-    
     <style>
 
         body,html {
@@ -20,18 +18,20 @@
         }
 
         body,h1 {
-            font-family: "Tilt Wrap",sans-serif;
+            font-family: "Century Gothic",sans-serif;
         }
 
         /*Navigation Bar*/
 
-        .navigation-bar {
-            position: fixed;
-            top: 0;
+        nav.navigation-bar {
             width: 100%;
+            max-height: 150px;
             display: inline;
-            justify-content: flex-end;
-            flex-direction: column-reverse;
+            background-color: white;
+        }
+
+        #logo{
+            height:100px
         }
 
         ul {
@@ -49,8 +49,14 @@
             display: block;
             color:black;
             text-align: center;
-            padding: 20px 20px;
+            padding: 20px 10px;
             text-decoration: none;
+        }
+
+        /*to change tab color when you hover*/
+        li a:hover{
+            background-color:lightslategray;
+            color:white;
         }
 
         /*Homepage*/
@@ -58,7 +64,7 @@
         .home{
             background-position: center;
             background-size: cover;
-            background-image: url('https://www.pexels.com/photo/gray-concrete-building-exterior-with-geometric-design-3038740/');
+            background-image: url("/home-bg.svg");
             min-height: 100%;
         }
 
@@ -76,17 +82,14 @@
             <li><a href=about.html>About</a></li>
             <li><a href=projects.html>Projects</a></li>
             <li><a href=index.html>HOME</a></li>
-          </ul>
+            <li id="logo" style="float:left;"><img src=mariaanthonette-logo.svg alt="mariaanthonette-logo" width="160px" height="80px"></li>          </ul>
 
     </div>
 
 
-    <div clas="about">
+    <div clas="home">
 
         <header>
-
-            <h1>still under constuction</h1>
-        
         </header>
 
     </div>
