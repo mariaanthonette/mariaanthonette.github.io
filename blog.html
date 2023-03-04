@@ -9,8 +9,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href=""><!--fonts Tilt Warp + Space Grotesk-->
     
     <style>
 
@@ -20,18 +18,20 @@
         }
 
         body,h1 {
-            font-family: "Tilt Wrap",sans-serif;
+            font-family: "Century Gothic",sans-serif;
         }
 
         /*Navigation Bar*/
 
-        .navigation-bar {
+        nav.navigation-bar {
             position: fixed;
             top: 0;
             width: 100%;
             display: inline;
             justify-content: flex-end;
             flex-direction: column-reverse;
+            color:white;
+            border: 2px solid black;
         }
 
         ul {
@@ -53,8 +53,10 @@
             text-decoration: none;
         }
 
+        /*to change tab color when you hover*/
         li a:hover{
-            width:200px;
+            width:100px;
+            background-color:blue;
         }
 
         /*Homepage*/
@@ -68,8 +70,8 @@
 
         .intro{
             box-sizing: border-box;
-            resize: vertical;
             overflow: auto;
+            outline-off:4px;
         }
 
     </style>
