@@ -54,7 +54,7 @@
         }
 
         /*to change tab color when you hover*/
-        li a:hover{
+        li.nav a:hover{
             background-color:lightslategray;
             color:white;
         }
@@ -63,7 +63,7 @@
         .profile{
             padding-top: 25px;
             float:right;
-            width: 35%;
+            width: 35vw;
         }
 
         .intro{
@@ -73,7 +73,7 @@
             margin: 20px;
         }
 
-        input[type=text] {
+        #search-bar[type=text] {
             width: 91%;
             box-sizing: border-box;
             border: 1px solid lightgray;
@@ -104,11 +104,10 @@
 
         .posts{
             float:left;
-            width: 65%;
+            width: 62vw;
         }
 
         .header{
-            height: 200px;
             object-fit: contain;
             float: left;
             margin: 0px;
@@ -144,17 +143,17 @@
     <nav class="navigation-bar">
 
         <ul>
-            <li><a href=contact.html>Contact</a></li>
-            <li><a href=blog.html>Blog</a></li>
-            <li><a href=about.html>About</a></li>
-            <li><a href=projects.html>Projects</a></li>
-            <li><a href=index.html>HOME</a></li>
-            <li id="logo" style="float:left;"><img src=mariaanthonette-logo.svg alt="mariaanthonette-logo" width="160px" height="80px"></li>
+            <li class="nav"><a href=contact.html>Contact</a></li>
+            <li class="nav"><a href=blog.html>Blog</a></li>
+            <li class="nav"><a href=about.html>About</a></li>
+            <li class="nav"><a href=projects.html>Projects</a></li>
+            <li class="nav"><a href=index.html>HOME</a></li>
+            <li class="nav" id="logo" style="float:left;"><img src=mariaanthonette-logo.svg alt="mariaanthonette-logo" width="160px" height="80px"></li>
         </ul>
 
     </nav>
     
-    <span><img src=blog-header.svg alt="mariaanthonette-logo" style="width:65%;"></span>
+    <span><img src=blog-header.svg alt="mariaanthonette-logo" style="width:62vw;"></span>
 
 <!--Self-introduction/Profile-->
     <aside class="profile">
@@ -174,7 +173,7 @@
     </section>
 
     <form>
-        <input type="text" name="search" placeholder="Search..">
+        <input id="search-bar" type="text" name="search" placeholder="Search...">
     </form>
 
     <section class="tabs">
@@ -184,7 +183,7 @@
         </ul>
     </section>
 
-    <section class="socialmedia">
+    <section id="socialmedia">
         <b><i>social media</i></b>
         <hr>
         <ul>
