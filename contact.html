@@ -39,6 +39,7 @@
             margin: 0;
             padding: 10;
             overflow: hidden;
+            background-color: white;
         }
         
         li {
@@ -68,13 +69,58 @@
             min-height: 100%;
         }
 
+        section{
+            float:left;
+            width: 30%;
+            vertical-align: middle;
+        }
+
+        .contacts{
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            padding: 30px;
+            margin: 30px;
+            align-items: center;
+        }
+
+        .socialmedia{
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            padding: 20px;
+            margin: 30px;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .submit{
+            float:right;
+            width: 60%;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            padding: 30px;
+            margin: 30px;
+        }
+
+        input{
+            border: 1px solid lightgray;
+            width: 500px;
+            padding: 10px;
+            align-items: flex-end;
+        }
+
+        #button{
+            width: fit-content;
+            font-style: "Century Gothic", sans serif;
+            padding: 10px;
+        }
+
     </style>
       
 </head>
 
 <body>
 
-    <div class="navigation-bar">
+    <nav class="navigation-bar">
 
         <ul>
             <li><a href=contact.html>Contact</a></li>
@@ -82,20 +128,57 @@
             <li><a href=about.html>About</a></li>
             <li><a href=projects.html>Projects</a></li>
             <li><a href=index.html>HOME</a></li>
-            <li id="logo" style="float:left;"><img src=mariaanthonette-logo.svg alt="mariaanthonette-logo" width="160px" height="80px"></li>          </ul>
+            <li id="logo" style="float:left;">
+                <img src=mariaanthonette-logo.svg alt="mariaanthonette-logo" style="width:160px;height:80px;">
+            </li>
+        </ul>
+    </nav>
 
-    </div>
+    <section>
 
-
-    <div clas="home">
-
-        <header>
-        </header>
-
-    </div>
-
+        <div class="contacts">
+            <span><h1>LET'S GET IN TOUCH</h1></span>
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/location-travel-map/address-location-icon.svg" style="width:50px;height:50px;"><address>Albay, PH</address>
+            <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/computers-mobile-hardware/mobile-phone-round-icon.svg" style="width:50px;height:50px;">+63 947 034 4049</p>
+            <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/email-round-icon.svg" style="width:50px;height:50px;">anthonettecanaveral@gmail.com</p>
+        </div>
     
+        <div class="socialmedia">
+            <b><i>social media</i></b>
+            <hr>
+            <ul>
+                <li><a href="mariaanthonette.github.com"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-icon.svg" style="width:50px;height:50px;"></a></li>
+                <li><a href=#linkedin><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-round-line-icon.svg" style="width:50px;height:50px;"></a></li>
+                <li><a href=#pinterest><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/pinterest-line-icon.svg" style="width:50px;height:50px;"></a></li>
+    
+            </ul>
+        </div>
 
+    </section>
+
+
+    <div class="submit">
+        <span><h1>SEND ME A MESSAGE</h1></span>
+        <i>Want to know more? Got comments and suggestions?</i>
+        <br>
+        <br>
+
+        <form action="/action_page.php" method="get">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject"><br><br>
+            <label for="message">Message</label><br><br>
+            <input type="text" id="message" name="message" style="min-height: 150px;"><br><br>
+            <input id="button" type="button" value="SUBMIT" style="font-style: Century Gothic, san serif;">
+          </form>
+    </div>
+
+    <footer>
+
+    </footer>
+    
 </body>
-
 </html>
