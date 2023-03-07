@@ -1,0 +1,15 @@
+#skills-card-container{
+    width: 80%;
+    float: center;
+    display: inline;
+}
+.skill-name{
+    border-radius: 42px;
+    background: #e0e0e0;
+    box-shadow:  -20px 20px 60px #b3b3b3,
+                 20px -20px 60px #ffffff;
+}
+img{
+    size: 20px 20px;
+    float:none;
+}
