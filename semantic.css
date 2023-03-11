@@ -1,0 +1,172 @@
+body{
+    font-family:'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+header{
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+    line-height: 5px;
+    text-align: center;
+}
+#name{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 100px;
+    color: #9ADCFF;
+}
+#category{
+    font-family:'Montserrat Alternates', sans-serif;
+    color: black;
+    letter-spacing: 25px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF89A;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+li{
+    float: right;
+    padding: 20px 30px;
+}
+.navbar > li a{
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+.navbar > li:hover{
+    background-color: #FFB2A6;
+}
+main{
+    background-color: #9ADCFF;
+}
+.features{
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+.features > img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: auto;
+}
+main > div{
+    padding: 10px;
+}
+aside{
+    box-sizing: border-box;
+    background-color: #FF8AAE;
+    width: 30%;
+    float:right;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+}
+aside > div{
+    float: none;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    line-height: 1.6px;
+}
+aside > div > ul > li{
+    display: list-item;
+    text-align: left;
+}
+.first{
+    box-sizing: border-box;
+    width: 70%;
+    height: inherit;
+    background-color: #FFF89A;
+}
+section.first article{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FFB2A6;
+    padding: 30px;
+}
+.event{
+    box-sizing: border-box;
+    background-color: white;
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    align-items: center;
+}
+div.event > img{
+    box-sizing: border-box;
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+    padding: 30px;
+    float: left;
+}
+div.element > div{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 30px;
+    float: right;
+}
+section.first > div{
+    box-sizing: border-box;
+    width: 70%;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+section.first > div > img{
+    box-sizing: border-box;
+    width: 25%;
+    height: 350px;
+    object-fit: cover;
+}
+section.two{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #9ADCFF;
+    padding: 20px;
+    margin: 0%;
+}
+article.dos{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+article.tres{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+section.three{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FFF89A;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 0%;
+}
