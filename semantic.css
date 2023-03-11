@@ -94,6 +94,8 @@ section.first article{
     width: 100%;
     background-color: #FFB2A6;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 .event{
     box-sizing: border-box;
@@ -132,6 +134,8 @@ section.first > div > img{
 }
 section.two{
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: #9ADCFF;
     padding: 20px;
